@@ -1,0 +1,166 @@
+* {
+  font-family: georgian;
+  text-align: center;
+}
+body {
+  background-color: gray;
+}
+
+.main {
+  display: inline-flex;
+}
+
+.text {
+  background-color: rgba(77, 76, 76, 0.315);
+  padding: 10px;
+}
+
+.text h2,
+h3,
+p {
+  text-align: left;
+  display: block;
+  color: aliceblue;
+}
+
+.main img {
+  width: 40%;
+  height: 40%;
+  padding-right: 20px;
+}
+
+.title {
+  color: white;
+  font-family: georgian;
+  font-size: 20px;
+  width: 100%;
+  background-color: black;
+  padding: 3px;
+  margin-bottom: 5px;
+}
+
+.title nav {
+  color: gray;
+  display: inline-flex;
+}
+
+.title ul:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.content {
+  display: inline-block;
+  position: relative;
+  max-width: 30%;
+  max-height: 30%;
+}
+.content .images {
+  height: 100%;
+  width: 100%;
+}
+.content .images img {
+  height: 100%;
+  width: 100%;
+}
+.btm-slides {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.btm-slides span {
+  height: 15px;
+  width: 50px;
+  border: 2px solid white;
+  margin: 0 3px;
+  cursor: pointer;
+}
+.sliders {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45px;
+  cursor: pointer;
+  border: 2px solid white;
+  background: rgba(255, 255, 255, 0.1);
+}
+.sliders:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.right {
+  right: 0;
+}
+.sliders span {
+  line-height: 41px;
+  font-size: 35px;
+  color: white;
+}
+footer {
+  color: gray;
+  background-color: rgb(173, 173, 173);
+  height: 100%;
+  width: 100%;
+}
+
+#img1:hover {
+  animation-name: example;
+  animation-duration: 2s;
+}
+
+#img2:hover {
+  transform: rotate(5deg);
+}
+
+#img3:hover {
+  animation: rotateSlowly 1.5s;
+}
+
+@keyframes rotateSlowly {
+  0% {
+    transform: rotate3d(1, 1, 0, 0deg);
+  }
+  50% {
+    transform: rotate3d(1, 1, 0, 50deg);
+  }
+  100% {
+    transform: rotate3d(1, 1, 0, 0deg);
+  }
+}
+
+#img4:hover {
+  transform: skewX(10deg);
+}
+
+#img5:hover {
+  transform: scale(110%);
+}
+
+#img6:hover {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes example {
+  from {
+    opacity: 40%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes spin {
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

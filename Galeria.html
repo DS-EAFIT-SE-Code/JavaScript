@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Galería</title>
+        <link href="stylesheet.css" rel="stylesheet"></link>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    </head>
+   <body>
+    <div class="title">      
+        <h1>Galería Interactiva</h1>
+        <nav>
+           <ul onclick="headerClick('Slider.html')">Inicio</ul>
+           <ul onclick="headerClick('Galeria.html')">Galería</ul>
+           <ul onclick="headerClick('About.html')">Quiénes somos</ul>
+        </nav>
+    </div> 
+    <div class="content">
+        <div class="images"> 
+           <img src="1.jpg" id="img1">
+           <img src="2.jpg" id="img2">
+           <img src="3.jpg" id="img3">
+           <img src="4.jpg" id="img4">
+           <img src="5.jpg" id="img5">
+           <img src="6.jfif" id="img6">
+        </div>
+        <div class="sliders left" onclick="side_slide(-1)">
+           <span class="fas fa-angle-left"></span>
+        </div>
+        <div class="sliders right" onclick="side_slide(1)">
+           <span class="fas fa-angle-right"></span>
+        </div>
+     </div>
+        <footer>
+            <div>
+             <h4>DSEAFIT - CODE - SOFTWARE ENGINEERING</h4>               
+            </div>
+
+        </footer>
+        <script src="script.js"></script>
+   </body> 
+</html>
